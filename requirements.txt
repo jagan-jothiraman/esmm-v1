@@ -1,0 +1,17 @@
+pandas>=1.1.0
+scikit-learn>=0.23.0
+numpy>=1.18.0
+pyarrow>=1.0.0
+PyYAML>=5.3 # For potential future YAML configs or if EasyRec implicitly uses it
+# google-cloud-storage>=1.30.0 # For direct GCS operations
+# gcsfs>=0.6.0 # For pandas to read directly from GCS via fsspec
+jupyter>=1.0.0 # For notebooks
+
+# EasyRec installation is assumed to be handled separately in the environment.
+# EasyRec has its own complex dependencies (e.g., specific TensorFlow versions).
+# Refer to EasyRec documentation for compatible TensorFlow versions.
+# Example: tensorflow>=1.12,<=1.15 or tensorflow>=2.0,<=2.12 depending on EasyRec version.
+# For CPU-only TensorFlow, you might use 'tensorflow-cpu'.
+
+# Note: If using the --execute_training flag in generate_and_run_train.py,
+# the environment must have EasyRec and its dependencies (like TensorFlow) installed.

@@ -1,0 +1,19 @@
+# Include the configuration template
+include configs/esmm_pipeline_template.config
+
+# Include all Python files from the src directory
+recursive-include src *.py
+
+# Include requirements file
+include requirements.txt
+
+# Include notebook files if they should be part of the sdist
+recursive-include notebooks *.ipynb
+
+# Include other files like README, LICENSE if they exist at the root
+# include README.md
+# include LICENSE
+exclude .gitignore
+exclude *.pyc
+recursive-exclude __pycache__ *
+recursive-exclude .pytest_cache *
